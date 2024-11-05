@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Solicitud de Extra-Ordinarios</title>
+    <link rel="stylesheet" href="../cssfiles/estilosolicitudes.css" />
+</head>
+<body>
+
+    <!-- Encabezado -->
+    <header>
+        <h1>Ingeniero en Sistemas Computacionales</h1>
+        <h2>Solicitud de Extra-Ordinarios</h2>
+        <p>Información del Alumno</p>
+    </header>
+
+    <!-- Barra de Navegación -->
+    <nav>
+        <a href="home.html">Inicio</a>
+        <a href="calificaciones.html">Calificaciones</a>
+        <a href="boleta.html">Boleta</a>
+        <a href="pagos.html">Pagos</a>
+    </nav>
+
+    <!-- Formulario -->
+    <main class="container">
+        <section class="formulario">
+            <form>
+                <label for="Matricula">Matrícula:</label>
+                <input type="text" id="Matricula" name="Matricula" required>
+                
+                <label for="Grado">Grado:</label>
+                <input type="text" id="Grado" name="Grado" required>
+                
+                <label for="Carrera">Carrera:</label>
+                <input type="text" id="Carrera" name="Carrera" required>
+                
+                <label for="Nombre">Nombre:</label>
+                <input type="text" id="Nombre" name="Nombre" required>
+                
+                <label for="Grupo">Grupo:</label>
+                <input type="text" id="Grupo" name="Grupo" required>
+                
+                <label for="Fecha">Fecha:</label>
+                <input type="date" id="Fecha" name="Fecha" required>
+                
+                <p>Seleccione la materia a presentar el Extra:</p>
+                <label for="materia">Materia:</label>
+                <select id="materia" name="materia" required>
+                    <option value="">Seleccione una opción</option>
+                    <option value="matematicas">Matemáticas</option>
+                    <option value="programacion">Programación</option>
+                    <option value="fisica">Física</option>
+                    <!-- Agrega más materias si es necesario -->
+                </select>
+                
+                <input type="submit" value="Enviar Solicitud">
+            </form>
+        </section>
+    </main>
+
+    <!-- Pie de Página -->
+    <footer>
+        <p>&copy; 2024 Virtual UT - Tu camino al éxito</p>
+    </footer>
+</body>
+</html>
