@@ -1,0 +1,171 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f0f2f5;
+    color: #333;
+}
+
+h1 {
+    color: white;
+}
+
+h2 {
+    color: black;
+}
+
+p {
+    color: #555;
+}
+
+/* Encabezado */
+header {
+    background-color: #2d87f0;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+header h1 {
+    font-size: 36px;
+}
+
+/* Barra de Navegación */
+nav {
+    display: flex;
+    justify-content: center;
+    background-color: #1c5ea6;
+    padding: 15px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    margin: 0 15px;
+    padding: 10px 20px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+nav a:hover {
+    background-color: #155284;
+    border-radius: 8px;
+    transform: scale(1.05);
+}
+
+/* Contenedor Principal */
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 40px;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.container h2 {
+    margin-bottom: 20px;
+    font-size: 28px;
+    border-bottom: 2px solid #2d87f0;
+    padding-bottom: 10px;
+}
+
+.detalles-pagos {
+    display: flex;
+    flex-wrap: wrap; /* Permite que los elementos se ajusten en la fila */
+    justify-content: space-between; /* Espacio uniforme entre los elementos */
+    background-color: white;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+}
+
+.detalle {
+    flex: 1; 
+    margin: 10px; 
+    background-color: #f9f9f9;
+    padding: 10px;
+    border-left: 5px solid #2d87f0;
+    border-radius: 5px;
+    min-width: 150px; 
+}
+
+
+.descargar-recibo {
+    flex-basis: 100%; 
+    text-align: center; 
+    margin-top: 10px; 
+}
+
+
+.descargar-recibo a {
+    text-decoration: none; 
+    color: #2d87f0; 
+    font-weight: bold; 
+}
+
+.descargar-recibo a:hover {
+    text-decoration: underline; 
+}.detalles-pagos {
+    display: flex;
+    flex-wrap: wrap; 
+    justify-content: space-between; 
+    background-color: white;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+}
+
+.detalle {
+    flex: 1; 
+    margin: 10px; 
+    background-color: #f9f9f9;
+    padding: 10px;
+    border-left: 5px solid #2d87f0;
+    border-radius: 5px;
+    min-width: 150px; 
+}
+
+
+.descargar-recibo {
+    flex-basis: 100%; 
+    text-align: center; 
+    margin-top: 10px; 
+}
+
+.descargar-recibo a {
+    text-decoration: none; 
+    color: #2d87f0; 
+    font-weight: bold; 
+}
+
+.descargar-recibo a:hover {
+    text-decoration: underline; 
+}
+
+
+footer {
+    background-color: #1c5ea6;
+    color: white;
+    text-align: center;
+    padding: 15px;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}
+
+/* Estilo para hacer la página responsive */
+@media (max-width: 768px) {
+    nav {
+        flex-direction: column;
+    }
+
+    nav a {
+        margin: 10px 0;
+    }
+}
